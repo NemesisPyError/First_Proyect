@@ -1,0 +1,45 @@
+body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-image: url(lineas-moradas-y-negras_3840x2160_xtrafondos.com.jpg);
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;         
+            margin-top: 90px;
+        }
+
+        #Chatbot {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .Input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        select, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #2196f3;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #1976d2;
+        }
+
