@@ -1,0 +1,72 @@
+/* ---------- Estilo base ---------- */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+}
+
+/* ---------- Navegación ---------- */
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Tipografías ---------- */
+h1, h2, h5 {
+    color: #343a40;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* ---------- Enlaces ---------- */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Imágenes ---------- */
+.img-fluid {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+/* ---------- Secciones con iframe (ej: mapas) ---------- */
+section iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+/* ---------- Chatbot u otros bloques especiales ---------- */
+#Chatbot {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* ---------- Línea final decorativa ---------- */
+.final-line {
+    width: 100%;
+    height: 6px;
+    background: #343a40;
+    display: block;
+    margin-top: 50px;
+}
+.img-fluid {
+    width: 100%;
+    height: 220px; /* o el alto que prefieras */
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
