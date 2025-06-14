@@ -1,45 +1,60 @@
-/* body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background-image: url(lineas-moradas-y-negras_3840x2160_xtrafondos.com.jpg);
-        }
+                    /* STYLE DEL CHATBOT  */
+ body {
+     font-family: Arial, sans-serif;
+     padding: 20px;
+     background-image: url(imagenes/lineas-moradas-y-negras_3840x2160_xtrafondos.com.jpg);
+ }
+ iframe{
+    border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ }
+ 
+ #contenedor {
+     height: 100vh;
+     /* Antes: 110vh */
+     width: 100vh;
+ }
 
-        .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            max-width: 600px;         
-            margin-top: 90px;
-        }
+ .container {
+     background-color: white;
+     padding: 30px;
+     border-radius: 8px;
+     max-width: 600px;
+     margin-top: 90px;
+ }
 
-        #Chatbot {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            background: #e3f2fd;
-            padding: 15px;
-            border-radius: 6px;
-        }
+ #Chatbot {
+     margin-top: 20px;
+     margin-bottom: 20px;
+     background: #e3f2fd;
+     padding: 15px;
+     border-radius: 6px;
+     background: #ffffff;
+     border: 1px solid #ccc;
+     border-radius: 8px;
 
-        .Input-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
+ }
 
-        select, button {
-            padding: 10px;
-            font-size: 16px;
-        }
+ .Input-container {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
 
-        button {
-            background-color: #2196f3;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 4px;
-        }
+ select,
+ button {
+     padding: 10px;
+     font-size: 16px;
+ }
 
-        button:hover {
-            background-color: #1976d2;
-        } */
+ button {
+     background-color: #2196f3;
+     color: white;
+     border: none;
+     cursor: pointer;
+     border-radius: 4px;
+ }
 
+ button:hover {
+     background-color: #1976d2;
+ }

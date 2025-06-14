@@ -1,72 +1,70 @@
-/* ---------- Estilo base ---------- */
-body {
-    background-color: #f8f9fa;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Style de la pagina principal  */
+.img-uniform {
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+    height: 200px;
+    /* Alto fijo */
+    object-fit: cover;
+    /* Corta la imagen para llenar sin deformar */
+    border-radius: 0.375rem;
+    /* Igual que .rounded */
 }
 
-.container {
-    max-width: 900px;
+section h2 {
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    color: #2c3e50;
 }
 
-/* ---------- Navegación ---------- */
-.navbar {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* ---------- Tipografías ---------- */
-h1, h2, h5 {
-    color: #343a40;
-}
-
-p {
-    text-align: justify;
+section p {
+    font-size: 1.1rem;
+    color: #333;
     line-height: 1.6;
 }
 
-/* ---------- Enlaces ---------- */
-a {
-    color: #007bff;
-    text-decoration: none;
+body {
+    background-color: #e6f4ea;
+    color: #1b3e1b;
+    /* texto gris oscuro */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
-a:hover {
-    text-decoration: underline;
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    /* Puedes ajustar según prefieras */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* ---------- Imágenes ---------- */
-.img-fluid {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
+h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
 }
 
-/* ---------- Secciones con iframe (ej: mapas) ---------- */
-section iframe {
-    width: 100%;
-    height: 300px;
-    border: 0;
+p {
+    font-weight: normal;
 }
 
-/* ---------- Chatbot u otros bloques especiales ---------- */
-#Chatbot {
-    background: #ffffff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 8px;
+header {
+    text-align: center;
 }
 
-/* ---------- Línea final decorativa ---------- */
-.final-line {
-    width: 100%;
-    height: 6px;
-    background: #343a40;
-    display: block;
-    margin-top: 50px;
-}
-.img-fluid {
-    width: 100%;
-    height: 220px; /* o el alto que prefieras */
-    object-fit: cover;
-    border-radius: 6px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.bg-verde {
+    background-color: #28a745 !important;
+    /* verde Bootstrap "success" */
 }
 
+/* Opcional: ajustar el color de los links si quieres más contraste */
+.navbar-dark .navbar-nav .nav-link {
+    color: #d4edda;
+    /* verde claro */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #a2d5a0;
+    /* verde más claro al pasar mouse */
+}

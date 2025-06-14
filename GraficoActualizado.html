@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Gráfico de Lugares Turísticos y Hoteles</title>
+  <!-- Bootstrap para el dashboard -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- LINK PARA QUE FUNCIONEN LOS GRAFICOS ESTATICOS (sin este script no funcionara) -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+<!-- Estilo de los graficos -->
   <style>
     body {
       margin: 0;
@@ -39,20 +41,28 @@
 <body>
 
   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Turismo.html">Turismo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Preguntas Frecuentes</a></li>
+          <li class="nav-item"><a class="nav-link" href="Chatbott.html">Preguntas Frecuentes</a></li>
           <li class="nav-item"><a class="nav-link" href="GraficoActualizado.html">Estadísticas</a></li>
-          <li class="nav-item"><a class="nav-link" href="Cita.html">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"></a></li>
+          <li class="nav-item"><a class="nav-link" href="Cita.html">Reservas</a></li>
+          
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Título -->
-  <h1>Lugares Turísticos y Hoteles por Ciudad</h1>
+  <h1>Lugares Turísticos y Museos por Ciudad</h1>
 
   <!-- Contenedor centrado del gráfico -->
   <div id="contenedor">
@@ -61,6 +71,7 @@
 
   <!-- Script del gráfico -->
   <script>
+    // seleccionamos el tipo de grafico 
     const ctx = document.getElementById('miGrafico').getContext('2d');
 
     const miGrafico = new Chart(ctx, {
@@ -69,21 +80,22 @@
         labels: ['Hohenau', 'Obligado', 'Bella Vista'],
         datasets: [
           {
-            label: 'Cantidad de lugares turísticos',
-            data: [15, 10, 20],
+            label: 'Cantidad de Lugares Turísticos',
+            data: [2, 2, 3 ],
             backgroundColor: 'rgba(255, 99, 132, 0.6)',
             borderColor: 'rgba(255,99,132,1)',
             borderWidth: 1
           },
           {
-            label: 'Cantidad de hoteles',
-            data: [5, 7, 10],
+            label: 'Cantidad de Museos',
+            data: [1,1,3],
             backgroundColor: 'rgba(54, 162, 235, 0.6)',
             borderColor: 'rgba(54,162,235,1)',
             borderWidth: 1
           }
         ]
       },
+      // Nos da la opcion entre ocultar una estadistica de la otra 
       options: {
         responsive: true,
         plugins: {
