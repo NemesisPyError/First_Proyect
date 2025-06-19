@@ -19,6 +19,7 @@ body {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid white;
 }
 
 h1 {
@@ -57,4 +58,3 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background: #0056b3;
 }
-
