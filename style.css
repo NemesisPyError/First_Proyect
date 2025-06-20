@@ -11,9 +11,10 @@
  
  #contenedor {
      height: 100vh;
+     /* Antes: 110vh */
      width: 100vh;
  }
-/* contenedor del chatbot */
+
  .container {
      background-color: white;
      padding: 30px;
@@ -21,7 +22,7 @@
      max-width: 600px;
      margin-top: 90px;
  }
-/* Seleccionar tamaño del chatbot, en la zona de escritura  */
+
  #Chatbot {
      margin-top: 20px;
      margin-bottom: 20px;
@@ -45,7 +46,7 @@
      padding: 10px;
      font-size: 16px;
  }
-/* boton para enviar las preguntas */
+
  button {
      background-color: #2196f3;
      color: white;
